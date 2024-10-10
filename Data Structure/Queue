@@ -1,0 +1,32 @@
+L=[]
+while True:
+    print('*********Queue program*********')
+    print('1.Insert item to Queue')
+    print('2.Delete item from Queue')
+    print('3.Print Queue')
+    print('4.Exit')
+
+    n=int(input('Enter menu: '))
+    if n==1:
+        w=input('# Enter item to insert: ')
+        L.append(w)
+        print(f"# '{w}' is inserted.")
+        print(f'# State of Queue:{L}')
+    
+        
+    if n==2:
+        if len(L)==0:
+            print('# Nothing to delete in queue.')
+        else:
+            print(f'# First item {L[0]} was removed.')
+            L.pop(0)
+            print(f'# State of Queue: {L}')
+            
+    if n==3:
+        if len(L)==0:
+            print('# Nothing to delete in queue.')
+        else:   
+            print(f'# State of Queue: {L}')
+            
+    if n==4:
+        break
